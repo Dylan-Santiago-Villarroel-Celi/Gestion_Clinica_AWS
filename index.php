@@ -62,7 +62,7 @@ $consulta = $conn->query("SELECT * FROM consultas LIMIT 1")->fetch_assoc();
         <p><strong>Nombre:</strong> <?php echo $paciente['nombre']; ?></p>
         <p><strong>Género:</strong> <?php echo $paciente['genero']; ?></p>
         <p><strong>Teléfono:</strong> <?php echo $paciente['telefono']; ?></p>
-        <a href="crud_pacientes.php"><button style="padding: 10px 20px; font-size: 16px;">Gestionar Pacientes</button></a>
+        <a href="pacientes.php"><button style="padding: 10px 20px; font-size: 16px;">Gestionar Pacientes</button></a>
     </div>
 
     <!-- Doctor -->
@@ -71,14 +71,14 @@ $consulta = $conn->query("SELECT * FROM consultas LIMIT 1")->fetch_assoc();
         <p><strong>Nombre:</strong> <?php echo $doctor['nombre']; ?></p>
         <p><strong>Especialidad:</strong> <?php echo $doctor['especialidad']; ?></p>
         <p><strong>Teléfono:</strong> <?php echo $doctor['telefono']; ?></p>
-        <a href="crud_doctores.php"><button style="padding: 10px 20px; font-size: 16px;">Gestionar Doctores</button></a>
+        <a href="doctores.php"><button style="padding: 10px 20px; font-size: 16px;">Gestionar Doctores</button></a>
     </div>
 
     <!-- Consultorio -->
     <div class="card">
         <h3>Consultorio</h3>
         <p><strong>Nombre:</strong> <?php echo $consultorio['nombre']; ?></p>
-        <a href="crud_consultorios.php"><button style="padding: 10px 20px; font-size: 16px;">Gestionar Consultorios</button></a>
+        <a href="consultorios.php"><button style="padding: 10px 20px; font-size: 16px;">Gestionar Consultorios</button></a>
     </div>
 
     <!-- Consulta -->
@@ -87,7 +87,7 @@ $consulta = $conn->query("SELECT * FROM consultas LIMIT 1")->fetch_assoc();
         <p><strong>Fecha:</strong> <?php echo $consulta['fecha']; ?></p>
         <p><strong>Motivo:</strong> <?php echo $consulta['motivo']; ?></p>
         <p><strong>Diagnóstico:</strong> <?php echo $consulta['diagnostico']; ?></p>
-        <a href="crud_consultas.php"><button style="padding: 10px 20px; font-size: 16px;">Gestionar Consultas</button></a>
+        <a href="consultas.php"><button style="padding: 10px 20px; font-size: 16px;">Gestionar Consultas</button></a>
     </div>
 </div>
     <!-- Footer -->
